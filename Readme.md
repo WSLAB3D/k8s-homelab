@@ -1,8 +1,38 @@
 
 Complete Kubernetes Lab Environment Setup Guide on Windows 11 using Ubuntu Virtual Machines
 
-<!-- TOC -->
-<!-- TOC -->
+- [Prerequisites for Kubernetes Lab Environment](#prerequisites-for-kubernetes-lab-environment)
+- [1. Infrastructure Setup](#1-infrastructure-setup)
+  - [1.1 VM Configuration in VMware Workstation Pro](#11-vm-configuration-in-vmware-workstation-pro)
+    - [Master Node (k8s-master):](#master-node-k8s-master)
+    - [Worker Node (k8s-worker):](#worker-node-k8s-worker)
+  - [1.2 Network Configuration](#12-network-configuration)
+- [2. Basic System Configuration](#2-basic-system-configuration)
+  - [2.1 Update System](#21-update-system)
+  - [2.2 Disable Swap](#22-disable-swap)
+  - [2.3 Load Kernel Modules](#23-load-kernel-modules)
+  - [2.4 Configure Sysctl](#24-configure-sysctl)
+  - [2.5 Configure Network Interfaces on both nodes](#25-configure-network-interfaces-on-both-nodes)
+- [3. Kubernetes Installation](#3-kubernetes-installation)
+  - [3.1 Install containerd](#31-install-containerd)
+  - [3.2 Install Kubernetes Components](#32-install-kubernetes-components)
+- [4. Initialize Kubernetes Cluster](#4-initialize-kubernetes-cluster)
+  - [4.1 Initialize Control Plane](#41-initialize-control-plane)
+  - [4.2 Set Up kubectl for Non-Root User](#42-set-up-kubectl-for-non-root-user)
+  - [4.3 Install Calico Network Plugin](#43-install-calico-network-plugin)
+- [5. Join Worker Node to Cluster](#5-join-worker-node-to-cluster)
+- [6. Verify Cluster Setup](#6-verify-cluster-setup)
+- [7. Install Monitoring Stack (Prometheus and Grafana)](#7-install-monitoring-stack-prometheus-and-grafana)
+  - [7.1 Install Helm](#71-install-helm)
+  - [7.2 Install Prometheus and Grafana](#72-install-prometheus-and-grafana)
+  - [7.3 Access Grafana](#73-access-grafana)
+  - [7.4 OPTIONAL Access Grafana and Promotheus using NodePort](#74-optional-access-grafana-and-promotheus-using-nodeport)
+  - [8.1 Check Node Status](#81-check-node-status)
+  - [8.2 Check Pod Status](#82-check-pod-status)
+  - [8.3 Check Logs](#83-check-logs)
+  - [8.4 Check Services](#84-check-services)
+- [9. Accessing Kubernetes Cluster from Windows Host Machine](#9-accessing-kubernetes-cluster-from-windows-host-machine)
+
 
 ======================================
 ## Prerequisites for Kubernetes Lab Environment
