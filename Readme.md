@@ -1,6 +1,8 @@
 
 Complete Kubernetes Lab Environment Setup Guide on Windows 11 using Ubuntu Virtual Machines
 
+<img src="Space Captain.png" alt="Lab Setup" title="Kubernetes Space Captain" width="800"/>
+
 - [Prerequisites for Kubernetes Lab Environment](#prerequisites-for-kubernetes-lab-environment)
 - [1. Infrastructure Setup](#1-infrastructure-setup)
   - [1.1 VM Configuration in VMware Workstation Pro](#11-vm-configuration-in-vmware-workstation-pro)
