@@ -224,6 +224,7 @@ Verify with:
 Perform these steps on both master and worker nodes:
 
 ### 3.1 Install containerd
+
 Installling the container runtime enviroment 
 
     sudo apt install -y containerd
@@ -233,6 +234,8 @@ Installling the container runtime enviroment
     sudo systemctl restart containerd
 
 ### 3.2 Install Kubernetes Components
+
+installing kubernetes components and holding them from automatic updates
 
     curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.29/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
     echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
