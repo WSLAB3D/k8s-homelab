@@ -224,6 +224,7 @@ Verify with:
 Perform these steps on both master and worker nodes:
 
 ### 3.1 Install containerd
+Installling the container runtime enviroment 
 
     sudo apt install -y containerd
     sudo mkdir -p /etc/containerd
