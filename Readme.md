@@ -66,7 +66,7 @@ Operating System: Windows 11
 2. Software Requierments
 
 2.1 VMware Workstation Pro 17 (Free for personal useage)
-
+Note: The VMware Workstation 17 installation process might be more complicated currently due to the recent Broadcom acquisition of VMware.
  * Create an account on https://broadcom.com
  * go to https://support.broadcom.com/
  * Choose Cloud Foundation from the upper right menu
