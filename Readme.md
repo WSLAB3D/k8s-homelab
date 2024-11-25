@@ -3,6 +3,8 @@ Complete Kubernetes Lab Environment Setup Guide on Windows 11 using Ubuntu Virtu
 
 <img src="Space Captain.png" alt="Lab Setup" title="Kubernetes Space Captain" width="800"/>
 
+
+- [Overview](#overview)
 - [Prerequisites for Kubernetes Lab Environment](#prerequisites-for-kubernetes-lab-environment)
 - [1. Infrastructure Setup](#1-infrastructure-setup)
   - [1.1 VM Configuration in VMware Workstation Pro](#11-vm-configuration-in-vmware-workstation-pro)
@@ -37,6 +39,18 @@ Complete Kubernetes Lab Environment Setup Guide on Windows 11 using Ubuntu Virtu
 
 
 ======================================
+## Overview
+
+This guide will help you create a production-like Kubernetes cluster with 2 nodes (1 master, 1 worker) running on Ubuntu VMs. Instead of clicking through VM windows, you'll learn to manage everything like a pro:
+
+- Control your VMs through SSH directly from your Windows terminal 🚀
+- Execute commands remotely without accessing the VM console 💻
+- Run kubectl commands from your Windows machine 🎮
+- Set up everything from scratch for deep understanding 🔧
+
+Think of it as your personal production environment - all the real-world practices, none of the complexity of cloud costs! Perfect for learning, testing, and experimenting with Kubernetes.
+
+
 ## Prerequisites for Kubernetes Lab Environment
 1. Hardware Requirements
 
