@@ -129,7 +129,7 @@ Run these steps on both master and worker nodes:
 ### 2.1 Update System
 
     sudo apt update && sudo apt upgrade -y
-    sudo apt install -y curl openssh-server net-tools nano
+    sudo apt install -y curl openssh-server net-tools nano apt-transport-https ca-certificates gpg
 
 ### 2.2 Disable Swap
 
@@ -237,8 +237,8 @@ Installling the container runtime enviroment
 
 installing kubernetes components and holding them from automatic updates
 
-    curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.29/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
-    echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
+    curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.33/deb/Release.key | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
+    echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.33/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
     sudo apt update
     sudo apt install -y kubelet kubeadm kubectl
     sudo apt-mark hold kubelet kubeadm kubectl
@@ -260,7 +260,7 @@ Perform these steps on the master node:
 
 ### 4.3 Install Calico Network Plugin
 
-    kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.3/manifests/tigera-operator.yaml
+    kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.29.3/manifests/tigera-operator.yaml
 
 Apply Calico configuration:
 
